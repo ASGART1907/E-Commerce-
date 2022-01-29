@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    min-height: 100vh;
+    user-select: none;
+    font-family: 'Dongle', sans-serif;
+}
+
+.container{
+    position: absolute;
+    width: 97%;
+    height: 95%;
+    background-color:#222;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+h1{
+    position: absolute;
+    font-size: 15rem;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0.1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color:violet;
+    transition: all 0.50s ease;
+}
+
+h1:hover{
+    opacity: 0.5;
+}
+
+.container div{
+    position: relative;
+    width: 275px;
+    height: 330px;
+    background-color: slategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.container div .img-container{
+    position: relative;
+    width: 95%;
+    height: 50%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.container div img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    background-position: center;
+}
+
+.container div h2{
+    margin: 5px 10px;
+    font-size: 2rem;
+    font-weight:500;
+}
+
+.container div button{
+    position: absolute;
+    width: 90%;
+    height: 37px;
+    left: 10px;
+    border: none;
+    bottom: 10px;
+    background-color: orange;
+    border-bottom: 4px solid orangered;
+    outline: none;
+    color: darkred;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container div button:focus{
+    border-bottom: none;
+}
+
+.container div span{
+    position: absolute;
+    font-size: 3rem;
+    white-space: wrap;
+    right: 20px;
+    color: lightgreen;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.container div small{
+    position: relative;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    top: 15px;
+}
+
+.hamper-container{
+    position: absolute;
+    width: 350px;
+    height: 95%;
+    background-color: #333;
+    z-index: 6;
+    border-radius: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    border: 2px solid lime;
+    display: none;
+    overflow: auto;
+}
+
+.hamper-container h3{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#hamper{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 7;
+    border: none;
+    outline: none;
+    left: 10px;
+    top: 10px;
+    color: lime;
+    background-color: #444;
+    box-shadow: 2px 3px 5px black;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+}
+
+.hamper-container div{
+    position: relative;
+    width: 275px;
+    height: 330px;
+    background-color: slategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hamper-container div h2{
+    margin: 5px 10px;
+    font-size: 2rem;
+    font-weight:500;
+
+}
+
+.hamper-container div div{
+    position: relative;
+    width: 95%;
+    height: 50%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    top: 10px;
+    overflow: hidden;
+}
+
+.hamper-container div div img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    background-position: center;
+}
+
+.hamper-container div small{
+    position: relative;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    top: 15px;
+}
+
+.hamper-container div span{
+    position: absolute;
+    font-size: 3rem;
+    white-space: wrap;
+    right: 20px;
+    color: lightgreen;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hamper-container div button{
+    position: absolute;
+    width: 90%;
+    height: 37px;
+    left: 10px;
+    border: none;
+    bottom: 10px;
+    background-color:red;
+    border-bottom: 4px solid darkred;
+    outline: none;
+    color: orange;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hamper-container div button:focus{
+    border-bottom: none;
+}
